@@ -6,7 +6,7 @@
     background-image: url('../img/young-woman-with-romantic-love-letter-picjumbo-com.jpg');
     background-size: cover;
     background-repeat:no-repeat;
-    background-position: center;
+    background-position: center center;
     padding-top: 180px;
     .square{
         background-blend-mode: color-burn;
@@ -30,16 +30,8 @@
             font-size: 36px;
             text-shadow: 2px 2px 4px rgba(74,74,74,1);
             
-        }
-        
+        }   
     }
-    
-//      .page_logo{
-//            
-//              display: block;
-//          margin: auto;
-//           
-//            }
 }
 
 nav{
@@ -69,6 +61,7 @@ body{
     .square{
         width: 600px;
         height: 366.50;
+        
     }
     
     }

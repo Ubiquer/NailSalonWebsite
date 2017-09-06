@@ -43,7 +43,7 @@
   background-image: url("../img/young-woman-with-romantic-love-letter-picjumbo-com.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   padding-top: 180px; }
   .section_1 .square {
     background-blend-mode: color-burn;
