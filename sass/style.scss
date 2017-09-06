@@ -15,8 +15,31 @@
         height: 416px;
         margin:auto;
         border: 3px solid white;
+        
+        .logo{
+            padding-top: 50px;
+            padding-left: 180px;
+        }
+        
+        .logo_caption{
+            text-align: center;
+            padding-top: 20px;
+            color: white;
+            font-family: Nunito;
+            font-style: italic;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(74,74,74,1);
+            
+        }
+        
     }
     
+//      .page_logo{
+//            
+//              display: block;
+//          margin: auto;
+//           
+//            }
 }
 
 nav{
@@ -32,7 +55,7 @@ body{
 @media (max-width: 1199px) {
 .section_1{ 
     
-    width:140%;
+    width:100%;
     
     }
 }
@@ -40,7 +63,13 @@ body{
 @media (max-width: 768px) {
 .section_1{ 
     
-    width:200%;
+    width:100%;
+    padding-top: 230px;
+    
+    .square{
+        width: 600px;
+        height: 366.50;
+    }
     
     }
 }
