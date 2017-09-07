@@ -81,14 +81,15 @@
     font-style: oblique;
     font-size: 50px;
     color: white; }
-  .section_about_me img {
+  .section_about_me .img-responsive {
     padding-left: 140px;
     padding-top: 40px;
-    max-width: 75%;
+    min-width: 100px;
+    width: 75%;
     height: auto; }
   .section_about_me .square_about_me {
-    padding-top: 80px;
     max-width: 100%;
+    position: relative;
     background-blend-mode: color-burn;
     box-shadow: 7px 7px 28px -10px #4a4a4a;
     width: 680px;

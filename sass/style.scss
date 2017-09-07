@@ -57,20 +57,22 @@
         
     }
     
-    img {
+    .img-responsive {
         
          padding-left: 140px;
          padding-top: 40px;
 //         padding-top: 60px;
 //         border: 3px solid white;    
-         max-width: 75%;
+        min-width: 100px; 
+        width: 75%;
 //         width: 470px;
         height: auto;
     }
-    
+//    
     .square_about_me{
-        padding-top: 80px;
         max-width: 100%;
+        position: relative;
+//        top: 100px;
 //        vertical-align: middle;
 //        padding-bottom: 200px;
         background-blend-mode: color-burn;
