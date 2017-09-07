@@ -46,8 +46,10 @@
     
     .header_about_me{
         
-        padding-top: 100px;
+        box-sizing: border-box;
+        padding-top: 140px;
         padding-left: 200px;
+        padding-bottom: 70px;
         font-family: Nunito;
         font-style: oblique;
         font-size: 50px;
@@ -56,28 +58,63 @@
     }
     
     img {
-         padding-left: 160px;
-         padding-top: 60px;
+        
+         padding-left: 140px;
+         padding-top: 40px;
+//         padding-top: 60px;
 //         border: 3px solid white;    
-         width: 440px;
+         max-width: 75%;
+//         width: 470px;
+        height: auto;
     }
     
     .square_about_me{
-        vertical-align: middle;
-        padding-bottom: 200px;
+        padding-top: 80px;
+        max-width: 100%;
+//        vertical-align: middle;
+//        padding-bottom: 200px;
         background-blend-mode: color-burn;
         box-shadow: 7px 7px 28px -10px rgba(74,74,74,1);
         width: 680px;
         height: 416px;
         margin:auto;
+        opacity: 0.7;
         border: 3px solid white;
+        
+        .about_me_text{
+            word-wrap:break-word;
+            font-family: Nunito;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            
+        }
+        
     }
     
 }
 
-nav{
-    font-size: 12ps;
+div.image div.col-md-2{
+    padding: 0px;
 }
+
+    .row{
+//        border: 3px solid red;
+    }
+    
+    .col-md-2{
+//        border: 3px solid red;
+        padding: 0;
+    }
+
+    .col-md-6{
+        border: 3px solid red;
+//        padding-top: 100px;
+    }
+
+    nav{
+        font-size: 12ps;
+    }
 
 body{
     
@@ -107,4 +144,15 @@ body{
     
     }
 }
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
 
