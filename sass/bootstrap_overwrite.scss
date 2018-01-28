@@ -1,39 +1,37 @@
 .navbar {
-    
     margin-bottom: 0;
     border-radious: 0;
     background: transparent;
     border-color: transparent;
     box-shadow: none;
-    
-    .navbar-toggle{
+    transition-duration: 0.5s;
+    .navbar-toggle {
         border-color: white;
         border-radius: 0px;
-//        text-align: center
-        
-         .icon-bar{
-    
+        //        text-align: center
+        .icon-bar {
             background: white;
-    
         }
     }
-    
-    .navbar-nav > li > a{
-        color: whitesmoke;
+    .navbar-nav > li > a {
+        color: white;
         font-family: Nunito;
-        font-size:24px;
+        font-size: 24px;
+        transition-duration: 0.5s;
     }
-    
+    .nav>li>a:hover, .nav>li>a:focus{
+        background-color: transparent;
+    }
 }
 
 .navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -42,7 +40,6 @@
         float: none;
         vertical-align: top;
     }
-
     .navbar .navbar-collapse {
         text-align: center;
     }
@@ -54,12 +51,10 @@
         float: none;
         vertical-align: top;
     }
-
     .navbar .navbar-collapse {
         text-align: center;
     }
 }
-
 
 //.navbar .navbar-nav > .active >a,
 //.navbar .navbar-nav > .active >a:hover,

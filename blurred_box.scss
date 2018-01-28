@@ -1,0 +1,48 @@
+ #search-bg {
+  background-image: url('../img/about_me.jpg');
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
+}
+
+//#bg {
+//  background-position: center top;
+//  padding: 70px 150px 70px 150px;
+//}
+
+#search-container {
+  position: relative;
+}
+
+#search-bg {
+  /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99;
+
+  /* Pull the background 70px higher to the same place as #bg's */
+  background-position: center -100px;
+
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+#search {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  padding: 200px;
+  background: white; /* for IE */
+  background: rgba(255,255,255,0.35);
+  border: 0;
+}
+
+@media (max-width: 600px ) {
+  #bg { padding: 10px; }
+  #search-bg { background-position: center -10px; }
+}
+
+//#search h2 { text-align: center; color: #fefefe; font-weight: normal; }
+//#search h2 { margin-bottom: 50px }
