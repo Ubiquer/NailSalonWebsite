@@ -14,7 +14,12 @@
     <nav class="navbar navbar-fixed-top cl-effect-4">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" ;> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" ;> 
+<!--                <span class="sr-only"></span> -->
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                </button>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,7 +41,7 @@
                 <br>Joanna Łysakowska</figcaption>
         </div>
     </section>
-    <section id="services_id" class="section_offer">
+    <section id="services_id" class="section_offer demo">
         <header>
             <h2 class="header_style">Usługi</h2> </header>
         <div class="container">
@@ -63,6 +68,10 @@
                         <td>Przedłużanie na formie</td>
                         <td>80 - 100zł</td>
                     </tr>
+                    <tr>
+                        <td>Parafina na dłonie</td>
+                        <td>20zł</td>
+                    </tr>
                 </tbody>
             </table>
             <h2 class="table_offer_option">Pielęgnacja stóp</h2>
@@ -82,8 +91,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </section>
+        </div> <a href="#gallery_id"><span></span></a> </section>
     <section id="gallery_id" class="section_gallery">
         <h2 class="header_style">Realizacje</h2>
         <div class="container">
@@ -118,16 +126,17 @@
                         <div class="lightboxgallery-gallery-item-content"> <span class="lightboxgallery-gallery-item-title">Felix Russell Saw</span> </div>
                     </div>
                 </a>
-                 <a class="lightboxgallery-gallery-item" target="_blank" href="img/nails/beige.jpg" data-title="Felix Russell Saw" data-alt="Felix Russell Saw" data-desc="">
+                <a class="lightboxgallery-gallery-item" target="_blank" href="img/nails/beige.jpg" data-title="Felix Russell Saw" data-alt="Felix Russell Saw" data-desc="">
                     <div> <img src="img/nails/beige2.jpg" title="Felix Russell Saw" alt="Felix Russell Saw">
                         <div class="lightboxgallery-gallery-item-content"> <span class="lightboxgallery-gallery-item-title">Felix Russell Saw</span> </div>
                     </div>
                 </a>
             </div>
-        </div>
-        <p>galeria</p>
-    </section>
-    <section id="about_me_id" class="section_about_me">
+        </div><a href="#about_me_id"><span></span></a>
+
+        <!--        <p>galeria</p>-->
+        </section>
+    <section id="about_me_id" class="section_about_me demo">
         <h2 class="header_style">O mnie</h2>
         <div class="container">
             <div> <img class="avatar" src="img/profile_pic.jpg"> </div>
@@ -140,9 +149,11 @@
                 <div class="col-md-3 vcenter"> <img class="kurs_cert" src="img/kurs_cert.jpg"> </div>
             </div>
         </div>
+        <a href="#contact_id"><span></span></a>
     </section>
-    <section id="contact_id" href="contact_id" class="section_contact">
+    <section id="contact_id" class="section_contact demo">
         <h2 class="header_style">Kontakt</h2>
+        <div class="distance"></div>
         <div id="contacts_container" class="container">
             <div class="row">
                 <div id="parent" class="col-4 col-md-4 text-center"> <img class="vector_icon" src="svg_icons/circle_houce_v.svg">
@@ -186,10 +197,12 @@
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
                 $('.navbar').addClass('opaque');
+                $('.bootstrap_overwrite').addClass('opaque');
                 //                $('nav').after.css("background-color", "red");
             }
             else {
                 $('.navbar').removeClass('opaque');
+                $('.bootstrap_overwrite').removeClass('opaque');
             }
         });
         $('a').click(function () {
@@ -208,6 +221,16 @@
                     , showTitle: true
                     , showDescription: true
                 });
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('a[href*=#]').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500, 'linear');
             });
         });
     </script>
