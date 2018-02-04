@@ -39,7 +39,7 @@ h4 {
 }
 
 h5 {
-//    padding-top: 30px;
+    //    padding-top: 30px;
     padding-bottom: 20px;
     font-family: Nunito;
     font-weight: 100;
@@ -70,6 +70,7 @@ h5 {
         margin: auto;
         border: 3px solid white;
         .logo {
+            width: 500px;
             padding-top: 50px;
             padding-left: 180px;
         }
@@ -176,7 +177,7 @@ h5 {
     background: #4A3835;
 }
 
-.distance{
+.distance {
     padding: 30px;
 }
 
@@ -233,7 +234,6 @@ h5 {
     background: #C6B3B3;
     font-family: Nunito;
     font-weight: 100;
-
 }
 
 .map {
@@ -360,6 +360,19 @@ body {
     font-size: 9px;
 }
 
+@media (max-width: 1300px) {
+    .section_offer {
+        align-content: center;
+        width: 100%;
+        padding: 30px 30px 30px 30px;
+    }
+    .section_gallery {
+        align-content: center;
+        padding: 30px 30px 30px 30px;
+    }
+}
+
+
 @media (max-width: 1199px) {
     .header_style {
         align-self: center;
@@ -378,8 +391,8 @@ body {
         width: 100%;
     }
     .section_offer {
-        width: 100%;
-        padding: 30px 50px 30px 50px;
+//        width: 100%;
+        padding: 30px 50px 60px 50px;
     }
     .section_gallery {
         padding: 30px 50px 30px 50px;
@@ -404,9 +417,27 @@ body {
     .section_1 {
         width: 100%;
         padding-top: 230px;
+        font-size: 20px;
         .square {
-            width: 600px;
-            height: 366.50;
+            width: 580px;
+            height: 354.82;
+            .logo {
+                vertical-align: middle;
+                width: 460px;
+                height: auto;
+                padding-top: 60px;
+                padding-left: 140px;
+            }
+            .logo_caption {
+                //            text-align: center;
+                vertical-align: middle;
+                padding-top: 20px;
+                color: white;
+                font-family: Nunito;
+                font-weight: 200;
+                font-size: 30px;
+                //            text-shadow: 1px 1px 10px rgba(74, 74, 74, 0.5);
+            }
         }
     }
     .section_offer {
@@ -416,12 +447,12 @@ body {
     .section_gallery {
         padding: 30px 50px 30px 50px;
     }
-//    .section_about_me {
-//        padding: 30px 50px 30px 50px;
-//        .distance {
-//            padding-top: 50px;
-//        }
-//    }
+    //    .section_about_me {
+    //        padding: 30px 50px 30px 50px;
+    //        .distance {
+    //            padding-top: 50px;
+    //        }
+    //    }
 }
 
 @media (max-width: 600px) {
@@ -432,19 +463,75 @@ body {
         background-position: center -10px;
     }
     .section_1 {
-        width: 80%;
+        width: 100%;
+        height: 700px;
         padding-top: 200px;
         .square {
-            width: 600px;
-            height: 366.50;
+            align-self: center;
+            align-content: center;
+            width: 380px;
+            height: 223px;
             font-size: 30px;
+            border: 2px solid white;
+            .logo {
+                width: 300px;
+                height: auto;
+                vertical-align: middle;
+                padding-top: 10px;
+                padding-left: 100px;
+                //            padding-top: 50px;
+                //            padding-left: 180px;
+            }
+            .logo_caption {
+                //            text-align: center;
+                padding-top: 20px;
+                color: white;
+                vertical-align: middle;
+                font-family: Nunito;
+                font-weight: 200;
+                font-size: 22px;
+                //            text-shadow: 1px 1px 10px rgba(74, 74, 74, 0.5);
+            }
         }
     }
     .section_offer {
-        padding: 30px 50px 30px 50px;
+        padding: 30px 50px 60px 50px;
         background-size: auto auto;
+        .header_offer {
+            text-align: center;
+            padding-bottom: 70px;
+            font-family: Nunito;
+            font-style: 200;
+            font-size: 50px;
+            color: white;
+        }
+//        .table {
+//            align-self: center;
+//            td:last-child {
+//                text-align: right;
+//            }
+//        }
+        .table_offer_option {
+            font-size: 24px;
+            font-weight: 200;
+            padding-bottom: 16px;
+            font-family: Nunito;
+            color: white;
+        }
+        .table_offer_option_details {
+            font-size: 16px;
+            font-weight: 200;
+            font-family: Nunito;
+            color: white;
+        }
+        .img-responsive {
+            padding-left: 140px;
+            padding-top: 40px;
+            min-width: 100px;
+            width: 75%;
+            height: auto;
+        }
     }
-  
 }
 
 

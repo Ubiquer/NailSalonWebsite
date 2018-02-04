@@ -33,49 +33,53 @@
     .navbar-toggle {
         border-color: dimgrey;
         border-radius: 0px;
-     .icon-bar {
+        .icon-bar {
             background: dimgrey;
         }
     }
-    
 }
 
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-}
-.navbar .navbar-collapse {
-    text-align: center;
-    background-color: snow!important;
-//    opacity: 90%;
+.navbar {
+    .container-fluid {
+        .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+        .navbar-collapse {
+            text-align: center;
+            background-color: transparent;
+            //    opacity: 90%;
+        }
+    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1199px) {
     .navbar .navbar-nav {
         display: inline-block;
         float: none;
         vertical-align: top;
     }
-    
-    .navbar .navbar-collapse {
-        background-color: snow;
-//        text-align: center;
+    .navbar {
+        .navbar-collapse {
+            text-align: center;
+            background-color: snow;
+        }
     }
 }
-@media (min-width: 1199px) {
+
+@media (max-width: 768px) {
     .navbar .navbar-nav {
         display: inline-block;
         float: none;
         vertical-align: top;
     }
-    
     .navbar .navbar-collapse {
-        text-align: center;
         background-color: snow;
-
+        //        text-align: center;
     }
 }
+
 //.navbar .navbar-nav > .active >a,
 //.navbar .navbar-nav > .active >a:hover,
 //.navbar .navbar-nav > .active >a:focus {
