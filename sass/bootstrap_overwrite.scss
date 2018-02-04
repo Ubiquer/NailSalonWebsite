@@ -47,7 +47,10 @@
 }
 .navbar .navbar-collapse {
     text-align: center;
+    background-color: snow!important;
+//    opacity: 90%;
 }
+
 @media (min-width: 768px) {
     .navbar .navbar-nav {
         display: inline-block;
@@ -56,7 +59,8 @@
     }
     
     .navbar .navbar-collapse {
-        text-align: center;
+        background-color: snow;
+//        text-align: center;
     }
 }
 @media (min-width: 1199px) {
@@ -68,6 +72,8 @@
     
     .navbar .navbar-collapse {
         text-align: center;
+        background-color: snow;
+
     }
 }
 //.navbar .navbar-nav > .active >a,

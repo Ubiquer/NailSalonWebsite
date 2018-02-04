@@ -2,6 +2,9 @@
 
 .cl-effect-4 a {
 	padding: 0 0 10px;
+    .navbar-header{
+        background-color: aliceblue;
+    }
 }
 
 .cl-effect-4 a::after {
@@ -21,6 +24,7 @@
 	-moz-transform: translateY(-10px);
 	transform: translateY(-10px);
 }
+
 
 .cl-effect-4 a:hover::after,
 .cl-effect-4 a:focus::after {
