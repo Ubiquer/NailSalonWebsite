@@ -106,9 +106,6 @@ h5 {
     background: #C59C9C;
     align-self: center;
     align-content: center;
-    //    margin:auto;
-    //    #EFCCB1
-    //    #C59C9C
     background-size: 1920px auto;
     background-repeat: no-repeat;
     background-position: center top;
@@ -147,32 +144,10 @@ h5 {
         width: 75%;
         height: auto;
     }
-    .square_about_me {
-        max-width: 100%;
-        position: relative;
-        background-position: center -100px;
-        vertical-align: middle;
-        padding-bottom: 200px;
-        background-image: url('../img/about_me.jpg');
-        background-size: 1920px auto;
-        background-repeat: no-repeat;
-        box-shadow: 7px 7px 28px -10px rgba(74, 74, 74, 1);
-        width: 680px;
-        height: 416px;
-        margin: auto;
-        opacity: 0.8;
-        border: 3px solid white;
-        .about_me_text {
-            word-wrap: break-word;
-            font-family: Nunito;
-            font-size: 20px;
-            text-align: center;
-            color: white;
-        }
-    }
 }
 
 .section_gallery {
+    width: 100%;
     padding: 70px 150px 70px 150px;
     background: #4A3835;
 }
@@ -188,8 +163,6 @@ h5 {
     height: auto;
     background: #C6B3B3;
     padding-top: 70px;
-    //    padding-bottom: 110px;
-    //    padding: 70px 150px 70px 150px;
     .avatar {
         border-radius: 50%;
         display: block;
@@ -360,18 +333,40 @@ body {
     font-size: 9px;
 }
 
+@media (max-width: 1490px) {
+   .section_offer {
+        align-content: center;
+        width: 100%;
+        padding: 30px 50px 30px 50px;
+        .container{
+            width:100%;
+        }
+    }
+    .section_gallery {
+            width: 100%;
+        .container{
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 1300px) {
     .section_offer {
         align-content: center;
         width: 100%;
-        padding: 30px 30px 30px 30px;
+        padding: 30px 50px 30px 50px;
+        .container{
+            width:100%;
+        }
     }
     .section_gallery {
-        align-content: center;
-        padding: 30px 30px 30px 30px;
+            width: 100%;
+        .container{
+            width: 100%;
+        }
+//            padding: 50px 50px 70px 90px;
     }
 }
-
 
 @media (max-width: 1199px) {
     .header_style {
@@ -391,10 +386,100 @@ body {
         width: 100%;
     }
     .section_offer {
-//        width: 100%;
-        padding: 30px 50px 60px 50px;
+        width: 100%;
+        padding: 30px 50px 30px 50px;
+        .container{
+            max-width: 100%;
+        }
     }
     .section_gallery {
+        width: 100%;
+        padding: 30px 50px 30px 50px;
+    }
+    .section_about_me {
+        .cert_section {}
+        //        padding: 30px 50px 30px 50px;
+        .avatar {
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            height: auto;
+            .distance {
+                padding: 50px;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .section_1 {
+        width: 100%;
+        padding-top: 230px;
+        font-size: 20px;
+        .square {
+            width: 580px;
+            height: 354.82;
+            .logo {
+                vertical-align: middle;
+                width: 460px;
+                height: auto;
+                padding-top: 60px;
+                padding-left: 140px;
+            }
+            .logo_caption {
+                vertical-align: middle;
+                padding-top: 20px;
+                color: white;
+                font-family: Nunito;
+                font-weight: 200;
+                font-size: 30px;
+            }
+        }
+    }
+    .section_offer {
+        width: 100%;
+//        padding: 30px 50px 30px 50px;
+    }
+    .section_gallery {
+        width: 100%;
+        padding: 30px 50px 30px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section_1 {
+        width: 100%;
+        padding-top: 230px;
+        font-size: 20px;
+        .square {
+            width: 580px;
+            height: 354.82;
+            .logo {
+                vertical-align: middle;
+                width: 460px;
+                height: auto;
+                padding-top: 60px;
+                padding-left: 140px;
+            }
+            .logo_caption {
+                //            text-align: center;
+                vertical-align: middle;
+                padding-top: 20px;
+                color: white;
+                font-family: Nunito;
+                font-weight: 200;
+                font-size: 30px;
+                //            text-shadow: 1px 1px 10px rgba(74, 74, 74, 0.5);
+            }
+        }
+    }
+    .section_offer {
+        width: 100%;
+        padding: 30px 50px 30px 50px;
+    }
+    .section_gallery {
+        width: 100%;
         padding: 30px 50px 30px 50px;
     }
     .section_about_me {
@@ -445,6 +530,7 @@ body {
         padding: 30px 50px 30px 50px;
     }
     .section_gallery {
+        width: 100%;
         padding: 30px 50px 30px 50px;
     }
     //    .section_about_me {
@@ -505,12 +591,6 @@ body {
             font-size: 50px;
             color: white;
         }
-//        .table {
-//            align-self: center;
-//            td:last-child {
-//                text-align: right;
-//            }
-//        }
         .table_offer_option {
             font-size: 24px;
             font-weight: 200;
